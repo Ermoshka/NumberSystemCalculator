@@ -10,7 +10,7 @@ nunjucks.configure('views', {
 
 app.get("/", (req, res) => {
     // res.sendFile(path.join(__dirname, "index.html"))
-    res.render("index.html")
+    res.render("index")
 })
 
 app.listen(process.env.PORT)
