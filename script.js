@@ -82,6 +82,8 @@ function calculateSystem(number, firstSystem, secondSystem) {
     } else {
         if(firstSystem == 16) { 
             return calculateSystem(parseInt(number, firstSystem), 10, secondSystem);
+        } else if(secondSystem == 16) {
+            return parseInt(number).toString(secondSystem);
         } else {
             return calculateSystem(parseInt(number), firstSystem, secondSystem);
         }
